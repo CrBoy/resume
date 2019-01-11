@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>畢玉泉（CrBoy）</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="created" content="2018-11-30T15:56:50+0800"/>
+        <meta name="modified" content="2019-01-11T22:20:01+0800"/>
+        <meta name="tags" content="Web, Linux, DevOps, aws, Ruby-on-Rails, JavaScript, 網管, 後端"/>
+        <meta name="last device" content="CrBoy-Pro"/>
+    </head>
+    <body>
+        <div class="note-wrapper">
+            <h1>畢玉泉（CrBoy）</h1>
+<p><span class='hashtag'>#Web</span> <span class='hashtag'>#後端</span> <span class='hashtag'>#Ruby-on-Rails</span> <span class='hashtag'>#JavaScript</span> <span class='hashtag'>#DevOps</span> <span class='hashtag'>#AWS</span> <span class='hashtag'>#網管</span> <span class='hashtag'>#Linux</span></p>
+<br>
+<p>聯絡方式：<a href="mailto:crazyscorpio@gmail.com">crazyscorpio@gmail.com</a></p>
+<br>
+<h2>經歷</h2>
+<ul><li>Sharelike 技術長 <i>2014 - 2018</i>
+</li></ul>
+<p>後端開發（CodeIgniter、Laravel、Rails）、網頁前端開發（AngularJS、Vue.js）、主機系統與雲端服務管理（VMWare ESXi、Linode、AWS、G Suite）、網路與設備管理</p>
+<ul><li>COSCUP 開源人年會 總召 <i>2015 - 2017</i>
+</li><li>國立成功大學計算機中心 網頁工程師 <i>2013 - 2014</i>
+</li></ul>
+<p>開發網頁專案（PHP + 變形的 CodeIgniter）</p>
+<ul><li>國立成功大學計算機中心 網頁工程師 <i>2012 - 2012</i>
+</li></ul>
+<p>協助選課系統、導入 Git、技術分享</p>
+<br>
+<h2>學歷</h2>
+<ul><li>國立成功大學資訊工程研究所 碩士 <i>2009 - 2012</i>
+</li><li>國立成功大學資訊工程學系 學士 <i>2005 - 2009</i>
+</li></ul>
+<br>
+<h2>技術相關經驗</h2>
+<h3>程式開發</h3>
+<ul><li>曾接觸數種程式語言，如 PHP（5.x）、Python（3.x）、Ruby（2.2~）、JavaScript（ES5 ~ ES6）。
+</li><li>為 Sharelike 運行最久的產品後端部份貢獻了超過 90% 的程式碼，使用 Ruby on Rails + MySQL + Redis。
+</li><li>以 AngularJS + Bootstrap 3 製作內部管理介面，供客服工程師使用。
+</li><li>使用 Node.js 製作小工具。使用較頻繁的有：
+<ul><li>	將 AWS CloudWatch Alarm 轉發到 Slack 的小工具。
+</li><li>	作為 SMS gateway 的內部服務，可將 staging 環境欲送出的簡訊，改送到 Slack 與 Telegram，以節省不必要的簡訊費用。
+</li></ul></li><li>使用 Bash script、Python 或 Ruby 撰寫自用的輔助小工具，如自動更新網站內容、門票釋出時發 Telegram 訊息通知，或是搶購限量商品。也有使用 Node.js 改寫的版本，利用其 event-driven 的特性，同時發出大量 request，對於時間敏感的操作很有助益。
+</li><li>2014 年使用 Python 參加 Google Code Jam，進入 top 3000，但止步於 top 500 外。
+</li><li>創造 <a href="http://wiki.csie.ncku.edu.tw/">NCKU CSIE Wiki</a>。運用 Gitit wiki 系統的 template 機制，配合 jQuery 與 Bootstrap，在不修改 server-side 的前提下將其改頭換面。
+</li></ul>
+<h3>基礎架構維運</h3>
+<ul><li>使用 GitLab 建置自動化測試、部署機制，應用於前端（基於 Vue.js 與 Webpack）與後端（基於 Rails 或 Sinatra）專案。亦有管理性質專案利用 CI 環境簡化工作。
+</li><li>維運 AWS 服務
+<ul><li>	為 Sharelike 唯一的 AWS 管理員。
+</li><li>	除常見的 EC2、RDS、S3、CloudFront 外，也利用 ELB 做 load balance，提升 API throughput，同時避免 downtime。
+</li><li>	架設 ECS cluster（然而多數時候機器數量為一台）用以運行內部所需服務（如 GitLab），以及後期新開發的產品，其 staging 與 production 都運行於此。
+</li><li>	利用 SES 做為公司服務之 SMTP service。
+</li><li>	應用 API Gateway + Lambda 建立輕量級服務，以零成本運行輔助性的小工具。
+</li><li>	絕大多數的服務都儘可能上 SSL，憑證部份直接使用 AWS 簽發的免費憑證。因為使用的服務都在 AWS，設定起來很方便。少數服務因特殊原因，則使用 Let's Encrypt 簽發的憑證。
+</li><li>	為達成 infrastructure as code 的目標，除早期已經運作的服務外，都儘可能使用 CloudFormation 做正式佈建。為免意外，所有的 template 都不使用 CloudFormer 產生，而是自行撰寫。
+</li></ul></li><li>Sharelike 網管，獨自佈設網路基礎建設與管理網通設備。自辦公室搬遷起，進行基礎佈線、設置有線與無線網路，以 VLAN 切割內網與聯外網路。並建置公司自有 VoIP 總機（IP-PBX），話務量雖不大，卻是很有趣的嘗試。後來更讓分機跨區域運作，運作良好。
+</li><li>2018 年擔任 COSCUP 資訊組長，負責協調網站開發事宜、開發網站。並與夥伴共同建立 COSCUP 網站自動建置、部署機制，使用 GitHub Pages + TravisCI。
+</li></ul>
+<h3>技術分享</h3>
+<ul><li>2012 年間，以「那些老師沒教的事 - Code Smart, Don't Code Hard」為主題，在不同地方演講，講授 Git 版本控制，以及 gcc、make 與 gdb 等 toolchain 的使用。
+</li><li>進行團隊內部分享，主題包含 Git、Git flow、design pattern (Java)、CA 憑證系統運作原理、AWS...等。
+</li><li>由於做的東西常跟 web 有關，2015 年的時候寫了這樣一篇整理：<a href="http://blog.crboy.net/2015/08/http.html">HTTP 通訊簡介</a>。
+</li></ul>
+<h3>綜合/其他</h3>
+<ul><li>使用 tcpdump、Wireshark 與 BurpSuite 進行網路封包分析。用以分析傳輸未加密或沒有進行 certificate pinning 的手機 app，瞭解其資料傳輸。或分析 SIP 的傳輸資料，在網路層做 debugging。
+</li><li>與友人共同發現並<a href="https://zeroday.hitcon.org/vulnerability/ZD-2017-01260">回報</a> 17 直播 app 中能造成重大業務損失的漏洞。
+</li><li>與友人共同發現 KTV 系統漏洞，並在<a href="https://zeroday.hitcon.org/vulnerability/ZD-2016-00074">回報</a>後於 HITCON lightning talk 發表。
+</li><li>熟悉命令列操作，具備中英文盲打能力。
+</li></ul>
+
+        </div>
+        <script type="text/javascript">
+            (function() {
+
+    var doc_ols = document.getElementsByTagName("ol");
+
+    for ( i=0; i<doc_ols.length; i++) {
+
+        var ol_start = doc_ols[i].getAttribute("start") - 1;
+        doc_ols[i].setAttribute("style", "counter-reset:ol " + ol_start + ";");
+
+    }
+
+})();
+        </script>
+        <style>
+            html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}html{font-size:87.5%;line-height:1.57143em}html{font-size:14px;line-height:1.6em;-webkit-text-size-adjust:100%}body{background:#fcfcfc;color:#545454;text-rendering:optimizeLegibility;font-family:"AvenirNext-Regular"}a{color:#de4c4f;text-decoration:none}h1{font-family:"AvenirNext-Medium";color:#333;font-size:1.6em;line-height:1.3em;margin-bottom:.78571em}h2{font-family:"AvenirNext-Medium";color:#333;font-size:1.3em;line-height:1em;margin-bottom:.62857em}h3{font-family:"AvenirNext-Medium";color:#333;font-size:1.15em;line-height:1em;margin-bottom:.47143em}p{margin-bottom:1.57143em;hyphens:auto}hr{height:1px;border:0;background-color:#dedede;margin:-1px auto 1.57143em auto}ul,ol{margin-bottom:.31429em}ul ul,ul ol,ol ul,ol ol{margin-bottom:0px}ol li:before{content:counter(ol) ".";counter-increment:ol;color:#e06e73;text-align:right;display:inline-block;min-width:1em;margin-right:0.5em}b,strong{font-family:"AvenirNext-Bold"}i,em{font-family:"AvenirNext-Italic"}code{font-family:"Menlo-Regular"}.text-overflow-ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sf_code_string,.sf_code_selector,.sf_code_attr-name,.sf_code_char,.sf_code_builtin,.sf_code_inserted{color:#D33905}.sf_code_comment,.sf_code_prolog,.sf_code_doctype,.sf_code_cdata{color:#838383}.sf_code_number,.sf_code_boolean{color:#0E73A2}.sf_code_keyword,.sf_code_atrule,.sf_code_rule,.sf_code_attr-value,.sf_code_function,.sf_code_class-name,.sf_code_class,.sf_code_regex,.sf_code_important,.sf_code_variable,.sf_code_interpolation{color:#0E73A2}.sf_code_property,.sf_code_tag,.sf_code_constant,.sf_code_symbol,.sf_code_deleted{color:#1B00CE}.sf_code_macro,.sf_code_entity,.sf_code_operator,.sf_code_url{color:#920448}.note-wrapper{max-width:46em;margin:0px auto;padding:1.57143em 3.14286em}.note-wrapper.spotlight-preview{overflow-x:hidden}u{text-decoration:none;background-image:linear-gradient(to bottom, rgba(0,0,0,0) 50%,#e06e73 50%);background-repeat:repeat-x;background-size:2px 2px;background-position:0 1.05em}s{color:#878787}p{margin-bottom:0.1em}hr{margin-bottom:0.7em;margin-top:0.7em}ul li{text-indent:-0.35em}ul li:before{content:"•";color:#e06e73;display:inline-block;margin-right:0.3em}ul ul{margin-left:1.25714em}ol li{text-indent:-1.45em}ol ol{margin-left:1.25714em}blockquote{display:block;margin-left:-1em;padding-left:0.8em;border-left:0.2em solid #e06e73}.todo-list ul{margin-left:1.88571em}.todo-list li{text-indent:-1.75em}.todo-list li:before{content:"";display:static;margin-right:0px}.todo-checkbox{text-indent:-1.7em}.todo-checkbox svg{margin-right:0.3em;position:relative;top:0.2em}.todo-checkbox svg #check{display:none}.todo-checkbox.todo-checked #check{display:inline}.todo-checkbox.todo-checked .todo-text{text-decoration:line-through;color:#878787}.code-inline{display:inline;background:white;border:solid 1px #dedede;padding:0.2em 0.5em;font-size:0.9em}.code-multiline{display:block;background:white;border:solid 1px #dedede;padding:0.7em 1em;font-size:0.9em;overflow-x:auto}.hashtag{display:inline-block;color:white;background:#b8bfc2;padding:0.0em 0.5em;border-radius:1em;text-indent:0}.hashtag a{color:#fff}.address a{color:#545454;background-image:linear-gradient(to bottom, rgba(0,0,0,0) 50%,#0da35e 50%);background-repeat:repeat-x;background-size:2px 2px;background-position:0 1.05em}.address svg{position:relative;top:0.2em;display:inline-block;margin-right:0.2em}.color-preview{display:inline-block;width:1em;height:1em;border:solid 1px rgba(0,0,0,0.3);border-radius:50%;margin-right:0.1em;position:relative;top:0.2em;white-space:nowrap}.color-code{margin-right:0.2em;font-family:"Menlo-Regular";font-size:0.9em}.color-hash{opacity:0.4}.ordered-list-number{color:#e06e73;text-align:right;display:inline-block;min-width:1em}.arrow svg{position:relative;top:0.08em;display:inline-block;margin-right:0.15em;margin-left:0.15em}.arrow svg #rod{stroke:#545454}.arrow svg #point{fill:#545454}mark{color:inherit;display:inline;padding:0.2em 0.5em;background-color:#fcffc0}img{max-width:100%;height:auto}
+
+        </style>
+    </body>
+</html>
