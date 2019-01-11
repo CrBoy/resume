@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="created" content="2018-11-30T15:56:50+0800"/>
-        <meta name="modified" content="2019-01-11T22:20:01+0800"/>
+        <meta name="modified" content="2019-01-11T23:10:37+0800"/>
         <meta name="tags" content="Web, Linux, DevOps, aws, Ruby-on-Rails, JavaScript, 網管, 後端"/>
         <meta name="last device" content="CrBoy-Pro"/>
     </head>
@@ -54,7 +54,7 @@
 </li><li>	利用 SES 做為公司服務之 SMTP service。
 </li><li>	應用 API Gateway + Lambda 建立輕量級服務，以零成本運行輔助性的小工具。
 </li><li>	絕大多數的服務都儘可能上 SSL，憑證部份直接使用 AWS 簽發的免費憑證。因為使用的服務都在 AWS，設定起來很方便。少數服務因特殊原因，則使用 Let's Encrypt 簽發的憑證。
-</li><li>	為達成 infrastructure as code 的目標，除早期已經運作的服務外，都儘可能使用 CloudFormation 做正式佈建。為免意外，所有的 template 都不使用 CloudFormer 產生，而是自行撰寫。
+</li><li>	為減少佈建基礎架構時的人工介入，達成 infrastructure as code，除早期已經運作的服務外，都儘可能使用 CloudFormation 進行佈建。另為了精確掌握每個資源，所有 CloudFormation 使用的 template 都是自行根據需求撰寫，不使用 CloudFormer 產生。
 </li></ul></li><li>Sharelike 網管，獨自佈設網路基礎建設與管理網通設備。自辦公室搬遷起，進行基礎佈線、設置有線與無線網路，以 VLAN 切割內網與聯外網路。並建置公司自有 VoIP 總機（IP-PBX），話務量雖不大，卻是很有趣的嘗試。後來更讓分機跨區域運作，運作良好。
 </li><li>2018 年擔任 COSCUP 資訊組長，負責協調網站開發事宜、開發網站。並與夥伴共同建立 COSCUP 網站自動建置、部署機制，使用 GitHub Pages + TravisCI。
 </li></ul>
