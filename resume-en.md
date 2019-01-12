@@ -1,5 +1,5 @@
 # Pi, Yu-Chuan (CrBoy)
-#Web #後端 #Ruby-on-Rails #JavaScript #DevOps #AWS #網管 #Linux
+#Web #Backend #Ruby-on-Rails #JavaScript #DevOps #AWS #Network #Linux
 
 Contact: crazyscorpio@gmail.com
 
